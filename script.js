@@ -4,3 +4,26 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+// INTERSECTION OBSERVER FOR ANIMATIONS
+const observerOptions = {
+  threshold: 0.1, // Trigger when 10% of the element is visible
+};
+
+const observerCallback = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+    }
+    else {
+      entry.target.classList.remove("visible");
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right").forEach((el) => {
+  el.classList.remove("visible");
+  observer.observe(el);
+});
