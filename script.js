@@ -7,7 +7,7 @@ function toggleMenu() {
 
 // INTERSECTION OBSERVER FOR ANIMATIONS
 const observerOptions = {
-  threshold: 0.1, // Trigger when 10% of the element is visible
+  threshold: 0.08, // Trigger when 8% of the element is visible
 };
 
 const observerCallback = (entries) => {
