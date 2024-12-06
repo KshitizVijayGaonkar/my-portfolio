@@ -23,7 +23,7 @@ const observerCallback = (entries) => {
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right").forEach((el) => {
+document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right, .slide-from-bottom").forEach((el) => {
   el.classList.remove("visible");
   observer.observe(el);
 });
