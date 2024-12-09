@@ -27,3 +27,14 @@ document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right, .slide-fro
   el.classList.remove("visible");
   observer.observe(el);
 });
+
+
+function scrollArrowRight() {
+  const container = document.querySelector(".certifications-container");
+  container.scrollBy({ left: 250, behavior: "smooth" });
+}
+
+function scrollArrowLeft() {
+  const container = document.querySelector(".certifications-container");
+  container.scrollBy({ left: -250, behavior: "smooth" });
+}

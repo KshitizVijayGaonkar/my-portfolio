@@ -242,92 +242,110 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects" class="slide-in-left">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+    <section id="certifications" class="slide-in-left">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Certifications</h1>
+    
+      <!-- Left Scroll Button -->
+      <button class="scroll-btn left" onclick="scrollArrowLeft()">
+        &#9664; <!-- Left Arrow -->
+      </button>
+    
+      <!-- Certifications Container -->
+      <div class="certifications-container">
+        <div class="certification-item">
+          <img
+            src="./assets/ai-900.png"
+            alt="Certification 1"
+            class="certification-img"
+          />
+          <h2 class="certification-title">Azure AI Fundamentals</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://www.credly.com/badges/318ad17f-edb3-4ed3-ae9f-a2748e3dde5d/public_url'"
+          >
+            View Certification
+          </button>
         </div>
+        <div class="certification-item">
+          <img
+            src="./assets/ai-engineer.png"
+            alt="Certification 2"
+            class="certification-img"
+          />
+          <h2 class="certification-title">Azure AI Engineer</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://learn.microsoft.com/api/credentials/share/en-us/50049611/5C26A024DDFD4576?sharingId=B61FA3E87CDD504C'"
+          >
+            View Certification
+          </button>
+        </div>
+        <div class="certification-item">
+          <img
+            src="./assets/aws-developer.png"
+            alt="Certification 3"
+            class="certification-img"
+          />
+          <h2 class="certification-title">AWS Developer(DVAC02)</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://www.credly.com/badges/2e351396-3eba-4721-adc6-a050993017e8/public_url'"
+          >
+            View Certification
+          </button>
+        </div>
+        <div class="certification-item">
+          <img
+            src="./assets/az-developer.png"
+            alt="Certification 4"
+            class="certification-img"
+          />
+          <h2 class="certification-title">Azure Developer</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://learn.microsoft.com/api/credentials/share/en-us/50049611/70FC7643F3DFFDBA?sharingId=B61FA3E87CDD504C'"
+          >
+            View Certification
+          </button>
+        </div>
+        <div class="certification-item">
+          <img
+            src="./assets/HackerRank_Icon.png"
+            alt="Certification 5"
+            class="certification-img"
+          />
+          <h2 class="certification-title">HackerRank Angular - Intermediate</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://www.hackerrank.com/certificates/01048a0af967'"
+          >
+            View Certification
+          </button>
+        </div>
+        <div class="certification-item">
+          <img
+            src="./assets/az-900.png"
+            alt="Certification 6"
+            class="certification-img"
+          />
+          <h2 class="certification-title">Azure Fundamentals</h2>
+          <button
+            class="btn btn-color-2 certification-btn"
+            onclick="location.href='https://www.credly.com/badges/f27b5aad-f2f9-4182-b01d-b18196e09174/public_url'"
+          >
+            View Certification
+          </button>
+        </div>
+        <!-- Add more certification items as needed -->
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+    
+      <!-- Right Scroll Button -->
+      <button class="scroll-btn right" onclick="scrollArrowRight()">
+        &#9654; <!-- Right Arrow -->
+      </button>
     </section>
+    
     <section id="contact" class="slide-in-right">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>

@@ -497,3 +497,92 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* CERTIFICATIONS SECTION */
+#certifications {
+  position: relative;
+}
+
+.certifications-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 1rem;
+  scroll-snap-type: x mandatory; /* Smooth snapping to items */
+}
+
+.certification-item {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 250px; /* Set a fixed width */
+  text-align: center;
+  background: rgb(250, 250, 250);
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.certification-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.certification-title {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.certification-btn {
+  margin-top: 1rem;
+  color: black;
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+}
+
+.certification-btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  cursor: pointer;
+}
+
+/* Make scrolling smooth */
+.certifications-container::-webkit-scrollbar {
+  height: 8px;
+}
+.certifications-container::-webkit-scrollbar-thumb {
+  background: rgb(163, 163, 163);
+  border-radius: 4px;
+}
+.certifications-container::-webkit-scrollbar-thumb:hover {
+  background: rgb(53, 53, 53);
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%); /* Adjust for centering */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(53, 53, 53);
+  z-index: 10; /* Ensure buttons are above content */
+}
+
+.scroll-btn.left {
+  left: 10px; /* Position the left button */
+}
+
+.scroll-btn.right {
+  right: 10px; /* Position the right button */
+}
+
+/* Optional Hover Effect */
+.scroll-btn:hover {
+  color: rgb(163, 163, 163);
+}
+
