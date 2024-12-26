@@ -353,9 +353,9 @@ section {
   flex-direction: column;
 }
 
-.article-container {
+.article-container {         
   display: flex;
-  text-align: initial;
+  align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
