@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".menu-links");
   const closeBtn = document.querySelector(".close-btn");
   const menuLinks = document.querySelectorAll(".menu-links a");
+  const scrollLeftButton = document.querySelector(".scroll-btn.left");
+  const scrollRightButton = document.querySelector(".scroll-btn.right");
+  const scrollContainer = document.querySelector(".certifications-container");
 
   // Toggle menu open/close
   const toggleMenu = () => {
@@ -20,6 +23,29 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburgerIcon.classList.remove("open");
       })
     );
+  }
+
+  // Scroll Left Functionality
+  const scrollArrowLeft = () => {
+    if (scrollContainer) {
+      scrollContainer.scrollBy({ left: -250, behavior: "smooth" });
+    }
+  };
+
+  // Scroll Right Functionality
+  const scrollArrowRight = () => {
+    if (scrollContainer) {
+      scrollContainer.scrollBy({ left: 250, behavior: "smooth" });
+    }
+  };
+
+  // Attach Event Listeners
+  if (scrollLeftButton) {
+    scrollLeftButton.addEventListener("click", scrollArrowLeft);
+  }
+
+  if (scrollRightButton) {
+    scrollRightButton.addEventListener("click", scrollArrowRight);
   }
 });
 
@@ -47,12 +73,3 @@ document.querySelectorAll(".fade-in, .slide-in-left, .slide-in-right, .slide-fro
 });
 
 
-function scrollArrowRight() {
-  const container = document.querySelector(".certifications-container");
-  container.scrollBy({ left: 250, behavior: "smooth" });
-}
-
-function scrollArrowLeft() {
-  const container = document.querySelector(".certifications-container");
-  container.scrollBy({ left: -250, behavior: "smooth" });
-}
