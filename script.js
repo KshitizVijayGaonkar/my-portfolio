@@ -1,9 +1,27 @@
-function toggleMenu() {
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerIcon = document.querySelector(".hamburger-icon");
   const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+  const closeBtn = document.querySelector(".close-btn");
+  const menuLinks = document.querySelectorAll(".menu-links a");
+
+  // Toggle menu open/close
+  const toggleMenu = () => {
+    menu.classList.toggle("open");
+    hamburgerIcon.classList.toggle("open");
+  };
+
+  // Attach event listeners
+  if (hamburgerIcon) hamburgerIcon.addEventListener("click", toggleMenu);
+  if (closeBtn) closeBtn.addEventListener("click", toggleMenu);
+  if (menuLinks) {
+    menuLinks.forEach((link) =>
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        hamburgerIcon.classList.remove("open");
+      })
+    );
+  }
+});
 
 // INTERSECTION OBSERVER FOR ANIMATIONS
 const observerOptions = {
